@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@keyframes fly{
+    from {bottom: -3vh}
+    50% {bottom: 0vh}
+    to{bottom: -3vh;}
+}
+
+@keyframes toptext{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(background.jpg);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    font-family: "Poppins";
+    font-size: max(40px, 3vh);
+    font-weight: 100;
+    line-height: 40px;
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+    animation-name: toptext;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+    
+}
+
+.logo{
+    position: absolute;
+    right: 3vw;
+    top: 4vh;
+}
+
+.element{
+    position: absolute;
+    animation-name: fly;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.img{
+    height: 80vh;
+    width: auto;
+}
+
+
+
